@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <title>Dominic.com</title>
+  </head>
+  <body>
+    <header>
+      <i><a href="#" class="logo">dominic</a></i>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section class="banner"></section>
+    <div class="words">
+      <h1>sticky navbar on scroll using vanilla javascript.</h1>
+    </div>
+    <div class="words para">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut maiores eum
+        ex quibusdam sed quod quam veniam similique laboriosam nam.Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Ut maiores eum ex quibusdam
+        sed quod quam veniam similique laboriosam nam.Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ut maiores eum ex quibusdam sed quod quam
+        veniam similique laboriosam nam.Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Ut maiores eum ex quibusdam sed quod quam veniam
+        similique laboriosam nam.
+      </p>
+    </br>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut maiores eum
+        ex quibusdam sed quod quam veniam similique laboriosam nam.Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Ut maiores eum ex quibusdam
+        sed quod quam veniam similique laboriosam nam.Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ut maiores eum ex quibusdam sed quod quam
+        veniam similique laboriosam nam.
+      </p>
+    </div>
+    <script type='text/javascript'>
+    window.addEventListener('scroll', function(){
+      var header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY );
+    })
+    </script>
+  </body>
+</html>
