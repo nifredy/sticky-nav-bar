@@ -1,0 +1,661 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://db.onlinewebfonts.com/c/229a57bbeef591e04a1fdfe347c90864?family=Centra+No2 ");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+::-webkit-scrollbar {
+  width:7px;
+  
+}
+
+::-webkit-scrollbar-track{
+  border-radius:5px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius:5px;
+  background-color:#eee;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
+/* ////////////////////CURSOR EFFECTS DESIGN ////////////////////*/
+.cursor {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: all .3s ease;
+  transition-property: background, transform;
+  transform: translate(-50%, -50%);
+  transform-origin: 100% 100%;
+  backdrop-filter: grayscale();
+  z-index: 100000;
+}
+
+.link-grow{
+  transform: scale(1.8);
+  border: 2px solid whitesmoke;
+  background: rgba(0, 0, 0, 0.411);
+}
+
+/* ////////////////////BODY ////////////////////*/
+
+body {
+  font-family: "albra regular", sans-serif;
+  min-height: 200vh;
+  overflow-x: hidden;
+  transition: .5s ease-out;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  cursor: none;
+  z-index: 10000;
+}
+.logo {
+  position: relative;
+  text-decoration: none;
+  color: #eee;
+  font-weight: 900;
+  font-family: "poppins";
+  font-size: 3em;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+.logo span {
+  font-weight: 100;
+}
+
+.logo-nav{
+  position: relative;
+  text-decoration: none;
+  color: #eee;
+  font-weight: 900;
+  font-family: "poppins";
+  font-size: 2.5em;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  
+}
+.logo-nav span {
+  font-weight: 100;
+}
+
+.nav-t{
+  margin-top: -6em;
+  margin-bottom: 3em;
+  margin-left: 6em;
+  transition: 0.6s;
+}
+.sticky .nav-t{
+  margin-top: -8em;
+  margin-bottom: 5em;
+}
+
+header.sticky {
+  padding: 5px 100px;
+  background: #eee;
+}
+header.sticky .logo {
+  color: #000;
+}
+header.sticky ul li .vis-links {
+  color: #000;
+}
+
+.nav .links-list {
+  list-style: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10em;
+}
+
+.links-list li {
+  position: relative;
+  list-style: none;
+  margin: 5px 0;
+  margin-left: 10em;
+  transition: all 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li .vis-links {
+  text-decoration: none;
+  font-size: 15px;
+  padding: 3px 0 1px 0;
+  font-family: "Centra No2";
+  color: #eee;
+  font-weight: 600;
+  transition: 0.6s;
+}
+
+.nav .links-list a::before,
+.nav .links-list a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #eee;
+  left: 0;
+  transform: scaleX(0);
+  transition: all 0.3s;
+}
+.nav .links-list a::before {
+  top: 0;
+  transform-origin: left;
+}
+.nav .links-list a::after {
+  bottom: 0;
+  transform-origin: right;
+}
+.nav .links-list a:hover::before,
+.nav .links-list a:hover::after {
+  transform: scaleX(1);
+}
+
+.sticky ul li .vis-links::before,
+.sticky ul li .vis-links::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  left: 0;
+  z-index: 1;
+  transform: scaleX(0);
+  transition: all 0.5s;
+}
+.sticky ul li .vis-links::before {
+  top: 0;
+  transform-origin: left;
+}
+.sticky ul li .vis-links::after {
+  bottom: 0;
+  transform-origin: right;
+}
+.sticky ul li .vis-links:hover::before,
+.sticky ul li .vis-links:hover::after {
+  transform: scaleX(1);
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../images/hair.jpg");
+  background-size: cover;
+  cursor: none;
+  z-index: -1;
+}
+.home-text {
+  font-family: "Playfair Display";
+  color: #90b1be;
+  padding-top: 1em;
+  font-size: 7rem;
+  margin-top: -5.5em;
+  cursor: none;
+}
+
+.text-1 {
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  font-style: italic;
+  margin-left: 1em;
+  letter-spacing: -5px;
+  cursor: none;
+}
+.text-1 span {
+  font-size: 0.3em;
+  text-transform: lowercase;
+  font-style: normal;
+  font-weight: 100;
+  margin-left: -20px;
+  cursor: none;
+}
+.text-2 {
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: -0.5em;
+  margin-bottom: -0.5em;
+  margin-left: 0.2em;
+  font-weight: 100;
+  font-size: 8rem;
+  cursor: none;
+}
+
+.text-3 {
+  padding: 0;
+  margin: 0;
+  text-transform: normal;
+  font-style: italic;
+  margin-left: 1em;
+  margin-left: 0.5em;
+  letter-spacing: 10px;
+  cursor: none;
+}
+
+.wigs{
+  margin-top: -15em;
+  margin-bottom: -5em;
+}
+
+.words {
+  position: relative;
+  text-transform: capitalize;
+  color: #eee;
+  margin-left: 1em;
+  line-height: 15em;
+  cursor: none;
+}
+.big-text {
+  font-size: 20rem;
+  padding-top: 0;
+  margin-top: 0.1em;
+  font-style: italic;
+  cursor: none;
+}
+.good {
+  margin-left: 1em;
+  text-transform: uppercase;
+  font-size: 17rem;
+  cursor: none;
+}
+
+/*===========RIGHT NAV============*/
+.menu-list {
+  list-style: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 0;
+  cursor: none;
+}
+.space {
+  font-size: 10px;
+  letter-spacing: 15px;
+  opacity: 50%;
+}
+.menu-hov {
+  position: relative;
+  margin: -2px 0;
+  margin-left: 1em;
+  transition: all 0.3s ease-out;
+  /* 
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.menu-hov:hover {
+  transform: translate(7px);
+}
+
+ul li .link {
+  position: relative;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 0px;
+  padding-left: 0;
+  font-size: 45px;
+  color: #fff;
+  z-index: 10000;
+  letter-spacing: 0px;
+  
+  /* 
+  margin: 0 15px;
+  font-weight: 100;
+  transition: 0.6s; */
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #2a3c42;
+  top: 0;
+  left: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s ease-out;
+  cursor: none;
+  transition-delay: 0.3s;
+}
+
+.bar {
+  width: 1.5rem;
+  height: 3px;
+  border-radius: 20%;
+  margin-top: -5px;
+  background-color: #eee;
+  transition: 0.5s;
+  position: relative;
+}
+
+.bar::before {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 3px;
+  border-radius: 20%;
+  background-color: #eee;
+  transition: 0.5s;
+  transform: translateY(-9px);
+}
+
+.active .bar {
+  margin-top: -5px;
+}
+.active .bar::before {
+  margin-top: 5px;
+}
+.close-icon {
+  width: 30px;
+  position: absolute;
+  padding: 2em;
+  right: 80px;
+  top: 52px;
+  opacity: 0;
+  z-index: 10000;
+  color: #fff;
+  cursor: none;
+}
+
+.sticky .nav-right .close-icon {
+  top: 17px;
+}
+
+.menu-icon {
+  position: absolute;
+  padding: 2em;
+  width: 30px;
+  right: 80px;
+  top: 52px;
+  z-index: 10;
+  transition: 0.6s;
+  cursor: none;
+}
+.sticky .menu-icon {
+  top: 17px;
+}
+.sticky .menu-icon .bar {
+  background-color: #4b6975;
+}
+.sticky .menu-icon .bar::before {
+  background-color: #4b6975;
+}
+
+
+
+.social {
+  position: fixed;
+  right: 1rem;
+  bottom: 5%;
+  display: flex;
+  padding-right: 3rem;
+  opacity: 1;
+  transition: 0.4s ease-out;
+}
+
+.footer-social {
+  text-decoration: none;
+  margin-left: 1.5em;
+}
+
+.hide {
+  background: transparent;
+  overflow: hidden;
+  padding-left: 0;
+}
+.hide .link {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+.img {
+  position: absolute;
+  height: 100vh;
+  margin-left: 31.9em;
+  margin-top: -12.95em;
+  visibility: hidden;
+  transition: all 0.6s ease-out;
+  transition-delay: 0.1s;
+  cursor: none;
+  opacity: 0;
+}
+
+.img2 {
+  margin-top: -17.2em;
+  
+}
+.img3 {
+  margin-top: -21.5em;
+  
+}
+.img4 {
+  margin-top: -25.7em;
+  
+}
+.img5 {
+  margin-top: -30em;
+  
+}
+.img6 {
+  margin-top: -34.2em;
+  
+}
+
+/* 3.45 */
+
+.menu-list:hover .hide {
+  overflow: visible;
+}
+.menu-list:hover .img {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*===================== WIGS SECTION ===================== */
+
+
+.section-title{
+  font-size: 15rem;
+  color: #eee ;
+  font-family: '' ;
+  padding-top: 0;
+  margin-top: 0.1em;
+  font-style: italic;
+  cursor: none;
+}
+.section-title h1{
+  margin-top:1em;
+  margin-left: .4em;
+  cursor: none;
+}
+.section-bc{
+  font-size: 30rem;
+  color: #eee;
+  font-family: '';
+  padding-top: 0;
+  margin-top: 0.1em;
+  opacity: 30%;
+  font-style: italic;
+  cursor: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width:1px;
+}
+
+.section-bc h1{
+  margin-top: -.95em;
+  margin-left: .2em;
+  cursor: none;
+}
+
+.bg-w{
+  margin-right: -7em;
+  margin-top: -5em;
+  cursor: none;
+}
+.bg-og{
+  width: 50%;
+  margin-top: -20em;
+  margin-left: 25em;
+  cursor: none;
+}
+.wigs-div{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  cursor: none;
+}
+.glows-div{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  cursor: none;
+}
+#glows{
+  margin-top: -15em;
+}
+.wigs-details{
+  color: #fff;
+  font-family: 'Playfair Display';
+  font-weight: 100;
+  margin-right: 1em;
+  
+}
+.wigs-details h2{
+  cursor: none;
+}
+
+@media screen and (max-width: 1325px){
+
+  .cursor{
+    display: none;
+  }
+  
+ .nav-t{
+   margin-top: -25em;
+   margin-bottom: 18em;
+ }
+ .sticky .nav-t{
+  margin-top: -27em;
+  margin-bottom: 20em;
+ }
+ ul li .link{
+font-size: 60px;
+ }
+  .img{
+    display: none;
+  }
+  .banner{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/hair-mobile.jpg");
+    background-size: cover;
+   
+  }
+  .home-text {
+    font-size: 8em;
+    margin-top: 2em;
+}
+.words{
+  line-height:12em;
+}
+.wigs{
+  margin-top: -40em;
+}
+.big-text{
+  font-size: 16rem;
+}
+.good{
+ font-size: 13rem;
+}
+.section{
+  
+  overflow-x: hidden;
+}
+
+.section-title{
+  font-size: 14rem;
+  padding-top: 0;
+  
+}
+.section-title h1{
+  margin-top:1.5em;
+  margin-left: .2em;
+}
+.section-bc{
+  font-size: 28rem;
+  padding-top: 0;
+  margin-top: 0.1em;
+  
+}
+
+.section-bc h1{
+  margin-top: -.98em;
+  margin-left: .1em;
+  cursor: none;
+}
+.wigs-div{
+  width: 90%;
+  margin-top: -45em;
+}
+
+
+.bg-w{
+  width: 60vw;
+  margin-right: -2em;
+}
+.bg-og{
+  width: 45%;
+  margin-top: -17em;
+  margin-left: 20em;
+}
+
+.glows-div{
+  width: 90%;
+  
+}
+#wigs{
+  margin-top:25em;
+}
+#glows{
+  margin-top: -65em;
+}
+
+}
+
+@media screen and (max-width: 978px){
+  
+  .banner{
+    position: absolute;
+    width: 134vw;
+    height: 134vh;
+    background: url("../images/hair-mobile.jpg");
+    background-size: cover;
+  }
+  .home-text{
+    font-size: 7.46em;
+  }
+}
