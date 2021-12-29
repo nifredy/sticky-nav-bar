@@ -2,18 +2,17 @@
 @import url("https://db.onlinewebfonts.com/c/229a57bbeef591e04a1fdfe347c90864?family=Centra+No2 ");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 ::-webkit-scrollbar {
-  width:7px;
-  
+  width: 7px;
 }
 
-::-webkit-scrollbar-track{
-  border-radius:5px;
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
-::-webkit-scrollbar-thumb{
-  border-radius:5px;
-  background-color:#eee;
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #eee;
 }
 * {
   margin: 0;
@@ -31,7 +30,7 @@
   border: 2px solid white;
   border-radius: 50%;
   pointer-events: none;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transition-property: background, transform;
   transform: translate(-50%, -50%);
   transform-origin: 100% 100%;
@@ -39,7 +38,7 @@
   z-index: 100000;
 }
 
-.link-grow{
+.link-grow {
   transform: scale(1.8);
   border: 2px solid whitesmoke;
   background: rgba(0, 0, 0, 0.411);
@@ -48,12 +47,12 @@
 /* ////////////////////BODY ////////////////////*/
 
 body {
+  background-color: #111717;
   font-family: "albra regular", sans-serif;
   min-height: 200vh;
   overflow-x: hidden;
-  transition: .5s ease-out;
+  transition: 0.5s ease-out;
 }
-
 
 header {
   position: fixed;
@@ -83,7 +82,7 @@ header {
   font-weight: 100;
 }
 
-.logo-nav{
+.logo-nav {
   position: relative;
   text-decoration: none;
   color: #eee;
@@ -92,19 +91,18 @@ header {
   font-size: 2.5em;
   text-transform: capitalize;
   letter-spacing: 2px;
-  
 }
 .logo-nav span {
   font-weight: 100;
 }
 
-.nav-t{
+.nav-t {
   margin-top: -6em;
   margin-bottom: 3em;
   margin-left: 6em;
   transition: 0.6s;
 }
-.sticky .nav-t{
+.sticky .nav-t {
   margin-top: -8em;
   margin-bottom: 5em;
 }
@@ -255,7 +253,7 @@ ul li .vis-links {
   cursor: none;
 }
 
-.wigs{
+.wigs {
   margin-top: -15em;
   margin-bottom: -5em;
 }
@@ -319,7 +317,7 @@ ul li .link {
   color: #fff;
   z-index: 10000;
   letter-spacing: 0px;
-  
+
   /* 
   margin: 0 15px;
   font-weight: 100;
@@ -404,8 +402,6 @@ nav {
   background-color: #4b6975;
 }
 
-
-
 .social {
   position: fixed;
   right: 1rem;
@@ -445,23 +441,18 @@ nav {
 
 .img2 {
   margin-top: -17.2em;
-  
 }
 .img3 {
   margin-top: -21.5em;
-  
 }
 .img4 {
   margin-top: -25.7em;
-  
 }
 .img5 {
   margin-top: -30em;
-  
 }
 .img6 {
   margin-top: -34.2em;
-  
 }
 
 /* 3.45 */
@@ -476,186 +467,273 @@ nav {
 
 /*===================== WIGS SECTION ===================== */
 
-
-.section-title{
-  font-size: 15rem;
-  color: #eee ;
-  font-family: '' ;
+.section-title {
+  font-size: 14rem;
+  color: #eee;
+  font-family: "";
   padding-top: 0;
   margin-top: 0.1em;
   font-style: italic;
   cursor: none;
 }
-.section-title h1{
-  margin-top:1em;
-  margin-left: .4em;
+.section-title h1 {
+  margin-top: 1em;
+  margin-left: 0.4em;
   cursor: none;
 }
-.section-bc{
-  font-size: 30rem;
+.section-bc {
+  font-size: 28rem;
   color: #eee;
-  font-family: '';
+  font-family: "";
   padding-top: 0;
   margin-top: 0.1em;
   opacity: 30%;
   font-style: italic;
   cursor: none;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-width: 2px;
 }
 
-.section-bc h1{
-  margin-top: -.95em;
-  margin-left: .2em;
+.section-bc h1 {
+  margin-top: -0.95em;
+  margin-left: 0.2em;
   cursor: none;
 }
 
-.bg-w{
+.bg-w {
   margin-right: -7em;
-  margin-top: -5em;
+  margin-top: -7em;
   cursor: none;
 }
-.bg-og{
+.bg-og {
   width: 50%;
-  margin-top: -20em;
+  margin-top: -22em;
   margin-left: 25em;
   cursor: none;
 }
-.wigs-div{
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-  cursor: none;
+.wigs-img {
+  margin-top: -5em;
 }
-.glows-div{
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-  cursor: none;
-}
-#glows{
-  margin-top: -15em;
-}
-.wigs-details{
+.wigs-details {
   color: #fff;
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-weight: 100;
   margin-right: 1em;
-  
+  margin-top: -4em;
 }
-.wigs-details h2{
+.wigs-details h2 {
   cursor: none;
 }
 
-@media screen and (max-width: 1325px){
+.wigs-div {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  cursor: none;
+}
+.glows-div {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  cursor: none;
+}
+#glows {
+  margin-top: -17em;
+  margin-bottom: -30em;
+}
+.post-div {
+  width: 100%;
+  height: 80vh;
+  margin-top: -5em;
+  background: linear-gradient(to right,rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.7)),
+    url(../images/braids.jpg);
+  background-size: cover;
+  background-attachment:fixed ;
+  /* filter: blur(5px); */
+}
 
-  .cursor{
+@media screen and (max-width: 1325px) {
+  ::-webkit-scrollbar {
     display: none;
   }
-  
- .nav-t{
-   margin-top: -25em;
-   margin-bottom: 18em;
- }
- .sticky .nav-t{
-  margin-top: -27em;
-  margin-bottom: 20em;
- }
- ul li .link{
-font-size: 60px;
- }
-  .img{
+  .cursor {
     display: none;
   }
-  .banner{
+
+  .nav-t {
+    margin-top: -25em;
+    margin-bottom: 18em;
+  }
+  .sticky .nav-t {
+    margin-top: -27em;
+    margin-bottom: 20em;
+  }
+  ul li .link {
+    font-size: 60px;
+  }
+  .img {
+    display: none;
+  }
+
+  .banner {
     position: absolute;
     width: 100vw;
     height: 100vh;
     background: url("../images/hair-mobile.jpg");
     background-size: cover;
-   
   }
   .home-text {
-    font-size: 8em;
-    margin-top: 2em;
-}
-.words{
-  line-height:12em;
-}
-.wigs{
-  margin-top: -40em;
-}
-.big-text{
-  font-size: 16rem;
-}
-.good{
- font-size: 13rem;
-}
-.section{
-  
-  overflow-x: hidden;
-}
-
-.section-title{
-  font-size: 14rem;
-  padding-top: 0;
-  
-}
-.section-title h1{
-  margin-top:1.5em;
-  margin-left: .2em;
-}
-.section-bc{
-  font-size: 28rem;
-  padding-top: 0;
-  margin-top: 0.1em;
-  
-}
-
-.section-bc h1{
-  margin-top: -.98em;
-  margin-left: .1em;
-  cursor: none;
-}
-.wigs-div{
-  width: 90%;
-  margin-top: -45em;
-}
-
-
-.bg-w{
-  width: 60vw;
-  margin-right: -2em;
-}
-.bg-og{
-  width: 45%;
-  margin-top: -17em;
-  margin-left: 20em;
-}
-
-.glows-div{
-  width: 90%;
-  
-}
-#wigs{
-  margin-top:25em;
-}
-#glows{
-  margin-top: -65em;
-}
-
-}
-
-@media screen and (max-width: 978px){
-  
-  .banner{
-    position: absolute;
-    width: 134vw;
-    height: 134vh;
-    background: url("../images/hair-mobile.jpg");
-    background-size: cover;
+    font-size: 8.7em;
+    margin-top: 2.5em;
   }
-  .home-text{
-    font-size: 7.46em;
+  .words {
+    line-height: 12em;
+  }
+  .wigs {
+    margin-top: -50em;
+  }
+  .big-text {
+    font-size: 16rem;
+  }
+  .good {
+    font-size: 13rem;
+  }
+  .section {
+    overflow-x: hidden;
+  }
+
+  .section-title {
+    font-size: 14rem;
+    padding-top: 0;
+  }
+  .section-title h1 {
+    margin-top: 0.5em;
+    margin-left: 0.2em;
+  }
+  .section-bc {
+    font-size: 28rem;
+    padding-top: 0;
+    margin-top: 0.1em;
+  }
+
+  .section-bc h1 {
+    margin-top: -0.98em;
+    margin-left: 0.1em;
+    cursor: none;
+  }
+  .wigs-div {
+    width: 90%;
+    margin-top: -45em;
+  }
+
+  .bg-w {
+    width: 60vw;
+    margin-right: -2em;
+  }
+  .bg-og {
+    width: 45%;
+    margin-top: -17em;
+    margin-left: 20em;
+  }
+
+  .glows-div {
+    width: 90%;
+    margin-top: -45em;
+  }
+  #wigs {
+    margin-top: 25em;
+  }
+  #glows {
+    margin-top: -55em;
+  }
+}
+
+@media screen and (max-width: 978px) {
+  .nav-t {
+    margin-top: -14.5em;
+    margin-bottom: 7.5em;
+  }
+  .sticky .nav-t {
+    margin-top: -16.5em;
+    margin-bottom: 9.5em;
+  }
+
+  .home-text {
+    font-size: 6.46em;
+    margin-top: 3em;
+  }
+  .menu-icon {
+    top: 42px;
+    right: 40px;
+  }
+  .close-icon {
+    top: 42px;
+    right: 40px;
+  }
+  .sticky .menu-icon {
+    top: 8px;
+  }
+  .logo {
+    font-size: 2em;
+    margin-left: -2em;
+    padding-right: 1em;
+  }
+  .nav .links-list {
+    margin-right: 4em;
+  }
+  .links-list li {
+    margin-left: 5em;
+  }
+
+  .vis-links {
+    padding-left: 2px;
+  }
+
+  .words {
+    line-height: 9em;
+  }
+  .wigs {
+    margin-top: -60em;
+  }
+
+  .big-text {
+    font-size: 12.7rem;
+    margin-left: -0.03em;
+  }
+  .good {
+    font-size: 9.7rem;
+    margin-left: 0.95em;
+  }
+  .section-title {
+    font-size: 12rem;
+  }
+  .section-bc {
+    font-size: 20rem;
+    margin-left: -0.3em;
+  }
+  .section-title h1 {
+    margin-top: 0.2em;
+  }
+  .wigs-details {
+    margin-top: -4em;
+  }
+  .bg-w {
+    width: 50vw;
+    margin-right: -1.5em;
+  }
+  .bg-og {
+    width: 43%;
+    margin-left: 12.7em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .big-text {
+    font-size: 12.7rem;
+    margin-left: -0.03em;
+  }
+  .good {
+    font-size: 9.7rem;
+    margin-left: 0.95em;
   }
 }
