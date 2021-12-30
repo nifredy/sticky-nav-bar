@@ -22,6 +22,7 @@
   cursor: none;
 }
 
+
 /* ////////////////////CURSOR EFFECTS DESIGN ////////////////////*/
 .cursor {
   position: absolute;
@@ -632,18 +633,57 @@ nav {
 
 .contact-div {
   width: 100%;
-  height: 60vh;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url(../images/braid-short.jpg);
     background-size:cover;
     background-attachment: fixed;
     
+  
 }
 
+/* .contact-title{
+  color: #eee;
+  text-align: center;
+  font-weight: 100;
+  font-size: 50px;
+} */
+
+.footer-title{
+  font-size: 15px;
+  padding: 50px 100px;
+}
 .footer-bg {
   margin-left: 12em;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
+}
+.socials{
+  
+  width: 22%;
+  color: #eee;
+  padding: 10px 75px;
+  display: flex;
+  flex-direction: column;
+}
+.soc{
+  display: flex;
+}
+.socials a{
+  color: rgb(158, 157, 157);
+  font-weight: 100;
+  letter-spacing:1px;
+  margin-bottom: .7em;
+  font-family: "Centra No2";
+}
+.socials h2{
+  color: rgba(238, 238, 238, 0.932);
+  font-size: 18px;
+  letter-spacing:2px;
+  font-weight: 900;
+  margin-bottom: .5em;
+  text-transform:uppercase ;
+  padding-left: 25px;
+  font-family: "Centra No2";
 }
 
 
