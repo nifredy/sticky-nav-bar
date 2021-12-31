@@ -46,6 +46,27 @@ navLink.forEach((link) => {
     mouseCursor.classList.remove("link-grow");
   });
 });
+
+// // ================ scroll smoothly EFFECTS ===============//
+
+// const body = document.body,
+// scrollWrap = document.getElementsByClassName("container")[0],
+// height = scrollWrap.getBoundingClientRect().height - 1,
+// speed = 0.04;
+
+// var offset = 0;
+
+// body.style.height = Math.floor(height) + "px";
+
+// function smoothScroll() {
+//   offset += (window.pageYOffset - offset) * speed;
+
+//   var scroll = "translateY(-" + offset + "px) translateZ(0)";
+//   scrollWrap.style.transform = scroll;
+
+//   callScroll = requestAnimationFrame(smoothScroll);
+// }
+
 // ================ NAVBAR RIGHT TEXT EFFECTS ===============//
 
 burger.addEventListener("click", () => {
@@ -91,6 +112,25 @@ close.addEventListener("click", () => {
   container.classList.remove("active");
 });
 
+// ========== REVEAL TEXT EFFECT ==========//
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+
+    if (revealtop < windowheight - revealpoint) {
+      reveals[i].classList.add("rev");
+    } else {
+      reveals[i].classList.remove("rev");
+    }
+  }
+}
+
 // ================ SCROLL TEXT EFFECT ===============//
 
 window.addEventListener("scroll", function () {
@@ -98,6 +138,24 @@ window.addEventListener("scroll", function () {
   var value = window.scrollY;
   bg.style.top = value * 0.4 + "px";
 });
+
+// ================ SCROLL UP ===============//
+
+// function scrollUp() {
+//   const scrollUp = document.getElementById("scroll-up");
+
+//   if (this.scrollY >= 200) scrollUp.classList.add("show-scroll");
+//   else scrollUp.classList.remove("show-scroll");
+// }
+// window.addEventListener("scroll", scrollUp);
+
+const text = document.querySelector(".text");
+text.innerHTML = text.innerText
+  .split("")
+  .map(
+    (char, i) => `<span style = "transform:rotate(${i * 18}deg)">${char}</span>`
+  )
+  .join("");
 
 // ================ COLOR CHANGE ON HOVER ===============//
 

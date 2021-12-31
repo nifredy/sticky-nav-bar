@@ -22,7 +22,6 @@
   cursor: none;
 }
 
-
 /* ////////////////////CURSOR EFFECTS DESIGN ////////////////////*/
 .cursor {
   position: absolute;
@@ -53,6 +52,7 @@ body {
   min-height: 200vh;
   overflow-x: hidden;
   transition: 0.5s ease-out;
+  
 }
 
 header {
@@ -633,61 +633,176 @@ nav {
 
 .contact-div {
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(to right, #404040,#404040,#404040ec, rgba(0, 0, 0, 0.9)),
     url(../images/braid-short.jpg);
-    background-size:cover;
-    background-attachment: fixed;
-    
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
   
 }
 
-/* .contact-title{
-  color: #eee;
-  text-align: center;
-  font-weight: 100;
-  font-size: 50px;
-} */
-
-.footer-title{
+.footer-title {
   font-size: 15px;
-  padding: 50px 100px;
+  padding: 40px 100px 40px 100px;
 }
 .footer-bg {
   margin-left: 12em;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
 }
-.socials{
-  
-  width: 22%;
+.socials {
   color: #eee;
   padding: 10px 75px;
   display: flex;
   flex-direction: column;
 }
-.soc{
+.soc {
   display: flex;
 }
-.socials a{
+.socials a {
   color: rgb(158, 157, 157);
   font-weight: 100;
-  letter-spacing:1px;
-  margin-bottom: .7em;
+  letter-spacing: 1px;
+  margin-bottom: 0.7em;
   font-family: "Centra No2";
 }
-.socials h2{
+.socials h2 {
   color: rgba(238, 238, 238, 0.932);
   font-size: 18px;
-  letter-spacing:2px;
+  letter-spacing: 2px;
   font-weight: 900;
-  margin-bottom: .5em;
-  text-transform:uppercase ;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
   padding-left: 25px;
   font-family: "Centra No2";
 }
 
+.vl {
+  border-left: 1px solid #eee;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  margin-top: 40px;
+  bottom: 1;
+}
+.label {
+  margin-top: 70px;
+  margin-left: 120px;
+  color: #eee;
+}
+.sub-title {
+  font-family: "poppins";
+  text-transform: capitalize;
+}
+.sub-p {
+  width: 54%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 12px;
+  font-family: "Centra No2";
+}
+label {
+  position: relative;
+  background: transparent;
+  color: transparent;
+  border: none;
+}
+input {
+  border: none;
+  border-bottom: 2px solid #eee;
+  width: 350px;
+  color: #fff;
+  font-size: 14px;
+  text-align: start;
+  font-family: "Centra No2";
+  background: transparent;
+  height: 30px;
+  padding: 0 2px;
+  outline: none;
+}
+.label a {
+  text-decoration: none;
+  color: #111;
+  font-family: "Centra No2";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eee;
+  padding: 10px 10px 8px 10px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.reveal {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: 1.5s ease;
+}
+.reveal.rev {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.footer-copy{
+  display: flex;
+  justify-content: space-between;
+}
+
+.scrollup {
+  position: absolute;
+  text-decoration: none;
+  right: 2rem;
+  bottom: -863.2%;
+  display: flex;
+  background-color: #aaa;
+  border-radius: 50%;
+  padding: 0.4rem;
+  opacity: 9;
+  transition: 0.4s;
+}
+.scrollup-icon {
+  color: #eee;
+  font-size: 1.35rem;
+}
 
 
+
+section .text{
+  position: absolute;
+  color: #fff;
+  right: 3.5rem;
+  bottom: -860%;
+  font-family: "poppins";
+  font-size: .7em;
+  user-select: none;
+  
+  animation: animate 7.5s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.text span{
+  position: absolute;
+  top: -50px;
+  text-transform: uppercase;
+  display: inline-block;
+  transform-origin: 0 50px;
+  z-index:10;
+}
 
 
 @media screen and (max-width: 1325px) {
