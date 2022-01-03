@@ -52,7 +52,6 @@ body {
   min-height: 200vh;
   overflow-x: hidden;
   transition: 0.5s ease-out;
-  
 }
 
 header {
@@ -532,6 +531,8 @@ nav {
   margin: 0 auto;
   cursor: none;
 }
+
+/*===================== GLOWS SECTION ===================== */
 .glows-div {
   display: flex;
   width: 80%;
@@ -542,6 +543,8 @@ nav {
   margin-top: -20em;
   margin-bottom: -35em;
 }
+
+/*===================== POSTS SECTION ===================== */
 .post-div {
   display: flex;
   width: 100%;
@@ -568,9 +571,13 @@ nav {
   font-style: italic;
   margin: 0 10px;
 }
+.slider-item {
+  width: 30%;
+  margin: 0 auto;
+}
 
-.post-div img {
-  width: 27%;
+.img-div {
+  width: 100%;
   padding: 25px 15px 70px 15px;
   margin: 0 auto;
   background-image: radial-gradient(#fff 10px, #fff 3px);
@@ -627,13 +634,23 @@ nav {
     transform: translateX(-480%);
   }
 }
+
+/*===================== ABOUT SECTION ===================== */
 #about {
   margin-bottom: -20em;
 }
 
+/*===================== CONTACT SECTION ===================== */
+
 .contact-div {
   width: 100%;
-  background: linear-gradient(to right, #404040,#404040,#404040ec, rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(
+      to right,
+      #404040,
+      #404040,
+      #404040ec,
+      rgba(0, 0, 0, 0.9)
+    ),
     url(../images/braid-short.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -642,18 +659,13 @@ nav {
 .footer {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  
 }
 
 .footer-title {
   font-size: 15px;
   padding: 40px 100px 40px 100px;
 }
-.footer-bg {
-  margin-left: 12em;
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-}
+
 .socials {
   color: #eee;
   padding: 10px 75px;
@@ -725,7 +737,7 @@ input {
   padding: 0 2px;
   outline: none;
 }
-.label a {
+.label .link {
   text-decoration: none;
   color: #111;
   font-family: "Centra No2";
@@ -740,6 +752,11 @@ input {
   text-transform: capitalize;
 }
 
+.sub-p a {
+  text-decoration: none;
+  color: #eee;
+}
+
 .reveal {
   transform: translateY(-100px);
   opacity: 0;
@@ -750,7 +767,7 @@ input {
   opacity: 1;
 }
 
-.footer-copy{
+.footer-copy {
   display: flex;
   justify-content: space-between;
 }
@@ -771,39 +788,39 @@ input {
   color: #eee;
   font-size: 1.35rem;
 }
+.last {
+  max-height: 50vh;
+}
 
-
-
-section .text{
+section .text {
   position: absolute;
   color: #fff;
   right: 3.5rem;
   bottom: -860%;
   font-family: "poppins";
-  font-size: .7em;
+  font-size: 0.7em;
   user-select: none;
-  
+
   animation: animate 7.5s linear infinite;
 }
 
-@keyframes animate{
-  0%{
+@keyframes animate {
+  0% {
     transform: rotate(360deg);
   }
-  100%{
+  100% {
     transform: rotate(0deg);
   }
 }
 
-.text span{
+.text span {
   position: absolute;
   top: -50px;
   text-transform: uppercase;
   display: inline-block;
   transform-origin: 0 50px;
-  z-index:10;
+  z-index: 10;
 }
-
 
 @media screen and (max-width: 1325px) {
   ::-webkit-scrollbar {
@@ -895,9 +912,64 @@ section .text{
   }
   #wigs {
     margin-top: 25em;
+    margin-bottom: -60em;
   }
+  .wigs-details {
+    margin-top: -9em;
+  }
+
   #glows {
     margin-top: -55em;
+    margin-bottom: -70em;
+  }
+
+  .post-div {
+    margin-top: 33.5em;
+  }
+
+  .post-title {
+    margin-bottom: -15em;
+    margin-top: -22em;
+  }
+  .text-slide {
+    margin-top: 9em;
+  }
+
+  #about {
+    margin-top: -25em;
+    margin-bottom: -55em;
+  }
+
+  section .text {
+    right: 5rem;
+    bottom: -426.8%;
+  }
+  .scrollup {
+    bottom: -428.4%;
+    right: 3.57rem;
+  }
+  .last {
+    max-height: 30vh;
+  }
+
+  .footer {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .footer-title {
+    padding: 40px 60px;
+  }
+  .socials {
+    padding: 10px 35px;
+  }
+  .label {
+    margin-left: 100px;
+  }
+  input {
+    width: 250px;
+  }
+  .sub-p {
+    width: 65%;
   }
 }
 
@@ -968,7 +1040,8 @@ section .text{
     margin-top: 0.2em;
   }
   .wigs-details {
-    margin-top: -4em;
+    margin-top: -14em;
+    font-size: 12px;
   }
   .bg-w {
     width: 50vw;
@@ -978,15 +1051,337 @@ section .text{
     width: 43%;
     margin-left: 12.7em;
   }
+  #wigs {
+    margin-bottom: -70em;
+  }
+  #glows {
+    margin-top: -55em;
+    margin-bottom: -75em;
+  }
+  #posts {
+    max-height: -1%;
+  }
+
+  .img-div {
+    padding: 15px 5px 60px 5px;
+  }
+  .text-slide {
+    margin-top: 5em;
+  }
+  #about {
+    max-height: 5%;
+    margin-top: -35em;
+    margin-bottom: -75em;
+  }
+  .btn-det a {
+    font-size: 20px;
+    padding: 3px 15px 1px 15px;
+  }
+  section .text {
+    bottom: -467.72%;
+  }
+  .scrollup {
+    bottom: -469.79%;
+  }
+  .footer-title {
+    padding: 40px 85px;
+  }
+  .socials {
+    padding: 10px 0px;
+  }
+  .socials a {
+    margin-bottom: 0.5em;
+  }
+  .label {
+    margin-left: 60px;
+  }
+  .sub-p {
+    width: 88%;
+    font-size: 11.3px;
+  }
+  input {
+    width: 198px;
+  }
+  .last {
+    max-height: 35vh;
+  }
+  .label .link {
+  }
 }
 
 @media screen and (max-width: 767px) {
   .big-text {
-    font-size: 12.7rem;
+    font-size: 10.7rem;
     margin-left: -0.03em;
   }
-  .good {
-    font-size: 9.7rem;
-    margin-left: 0.95em;
+  .vis-links {
+    display: none;
   }
+  .banner {
+    background: url("../images/hair-phone.jpg");
+    background-size: cover;
+  }
+  .good {
+    font-size: 7.7rem;
+    margin-left: 0.8em;
+    margin-top: -0.25em;
+  }
+
+  .section-title {
+    font-size: 10rem;
+  }
+  .section-title h1 {
+    margin-left: 0.1em;
+  }
+  .section-bc {
+    font-size: 18rem;
+  }
+
+  .home-text {
+    margin-top: 4.5em;
+    font-size: 5em;
+  }
+  #wigs {
+    margin-bottom: -63em;
+  }
+  .wigs-div {
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 5em;
+    margin-top: -48em;
+    flex-direction: column;
+  }
+  .bg-w {
+    width: 70vw;
+  }
+  .bg-og {
+    width: 40%;
+    margin-top: -13em;
+  }
+  .wigs-details {
+    order: 2;
+    margin-top: 5em;
+    line-height: 2.5em;
+    font-size: 15px;
+  }
+
+  #glows {
+    margin-top: -60em;
+    margin-bottom: -69.5em;
+  }
+  .glows-div {
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 5em;
+    margin-top: -48em;
+    flex-direction: column;
+  }
+
+  .post-title {
+    font-size: 2em;
+    margin-top: -30em;
+  }
+  .post-div {
+    margin-top: 420px;
+  }
+  #about {
+    margin-top: -40em;
+    margin-bottom: -59em;
+  }
+  .btn-det {
+    margin-top: 15px;
+  }
+
+  .text-slide h2 {
+    font-size: 80px;
+  }
+
+  section .text {
+    bottom: -464.5%;
+  }
+  .scrollup {
+    bottom: -466.5%;
+  }
+  .footer-title {
+    padding: 60px 85px;
+  }
+  .socials a {
+    margin-bottom: 0.3em;
+  }
+  .label {
+    margin-left: -2em;
+  }
+  .sub-p {
+    width: 97%;
+    font-size: 11.3px;
+  }
+  .footer {
+    width: 95%;
+  }
+  input {
+    width: 160px;
+  }
+  .label .link {
+    font-size: 12px;
+    margin-bottom: -2em;
+    padding: 5px 5px 3px 5px;
+  }
+  .last {
+    max-height: 39vh;
+  }
+  .socials h2 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .big-text {
+    font-size: 9.7rem;
+  }
+
+  .good {
+    font-size: 7.1rem;
+    margin-left: 0.6em;
+    margin-top: -0.3em;
+  }
+  .home-text {
+    margin-top: 3.5em;
+    font-size: 4em;
+  }
+  .text-1 span {
+    font-size: 0.25em;
+    letter-spacing: 1px;
+  }
+  .text-2 {
+    font-size: 5rem;
+  }
+  .vis-links {
+    display: none;
+  }
+  .nav-t {
+    font-size: 12.6px;
+    margin-top: -10em;
+    margin-bottom: 8em;
+    margin-left: 3em;
+  }
+  .sticky .nav-t {
+    margin-top: -12em;
+    margin-bottom: 10em;
+  }
+
+  ul li .link {
+    font-size: 40px;
+  }
+  .bg-og {
+    margin-top: -12em;
+    margin-left: 11em;
+  }
+  .section-title {
+    font-size: 9rem;
+  }
+  .section-bc {
+    font-size: 16rem;
+  }
+
+  .socials {
+    margin-top: -2.5em;
+  }
+
+  .footer-title {
+    margin-left: 1.95em;
+    margin-top: -1.7em;
+  }
+  .soc {
+    margin-left: -3.5em;
+    justify-content: space-around;
+  }
+  .label {
+    margin-left: 50px;
+  }
+  input {
+    width: 300px;
+  }
+  .rmv-img{
+    display: none;
+  }
+  .slider-item{
+    width: 45%;
+  }
+  .sub-p {
+    width: 80%;
+    margin-top: 3em;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .vl {
+    display: none;
+  }
+  .label .link {
+    font-size: 12px;
+    margin-bottom: -2em;
+    padding: 10px 10px 5px 10px;
+  }
+  section .text {
+    bottom: -667.3%;
+  }
+  .scrollup {
+    bottom: -670.3%;
+  }
+  .last {
+    max-height: 88.5vh;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .big-text {
+    font-size:8rem;
+  }
+
+  .good {
+    font-size: 5.5rem;
+    margin-left: 0.6em;
+    margin-top: -0.7em;
+  }
+  .home-text {
+    margin-top: 5.5em;
+    font-size: 3.5em;
+  }
+  .text-1 span {
+    font-size: 0.25em;
+    margin-left: 1px;
+    letter-spacing: 1px;
+  }
+  .text-2 {
+    font-size: 4rem;
+  }
+
+  .space{
+    font-size: 5px;
+    letter-spacing: 5px;
+  }
+  .social{
+    padding-right: 1rem;
+    
+  }
+  .nav-t{
+    margin-top: -10.5em;
+    margin-bottom: 8.5em;
+  }
+
+  .sticky .nav-t {
+    margin-top: -13em;
+    margin-bottom: 11em;
+  }
+  .logo{
+    font-size: 1.5em;
+    margin-left: -3em;
+  }
+}
+
+@media screen and (max-width: 375px){
+
 }
