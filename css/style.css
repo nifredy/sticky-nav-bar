@@ -1105,8 +1105,6 @@ section .text {
   .last {
     max-height: 35vh;
   }
-  .label .link {
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1301,10 +1299,10 @@ section .text {
   input {
     width: 300px;
   }
-  .rmv-img{
+  .rmv-img {
     display: none;
   }
-  .slider-item{
+  .slider-item {
     width: 45%;
   }
   .sub-p {
@@ -1336,9 +1334,9 @@ section .text {
   }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 414px) {
   .big-text {
-    font-size:8rem;
+    font-size: 8rem;
   }
 
   .good {
@@ -1358,16 +1356,23 @@ section .text {
   .text-2 {
     font-size: 4rem;
   }
+  .section-title {
+    font-size: 6.5rem;
+  }
+  .section-bc {
+    font-size: 12rem;
+    margin-left: -0.5em;
+    -webkit-text-stroke-width: 1.5px;
+  }
 
-  .space{
+  .space {
     font-size: 5px;
     letter-spacing: 5px;
   }
-  .social{
+  .social {
     padding-right: 1rem;
-    
   }
-  .nav-t{
+  .nav-t {
     margin-top: -10.5em;
     margin-bottom: 8.5em;
   }
@@ -1376,12 +1381,199 @@ section .text {
     margin-top: -13em;
     margin-bottom: 11em;
   }
-  .logo{
+  .logo {
     font-size: 1.5em;
     margin-left: -3em;
   }
+
+  .wigs-div {
+    margin-top: -55em;
+  }
+  .bg-w {
+    width: 80vw;
+    margin-left: -2em;
+  }
+  .bg-og {
+    width: 45%;
+    margin-left: 7em;
+  }
+  .wigs-details {
+    font-size: 14px;
+    margin-top: 1.5em;
+  }
+  .glows-div {
+    margin-top: -55em;
+  }
+  #glows {
+    margin-top: -67em;
+  }
+  .post-title {
+    margin-top: -34em;
+  }
+
+  .footer-title {
+    margin-left: 0.42em;
+    margin-top: -1.7em;
+  }
+  .label {
+    margin-left: 22px;
+  }
+  input {
+    width: 250px;
+  }
+
+  section .text {
+    bottom: -570.8%;
+  }
+  .scrollup {
+    bottom: -573.8%;
+  }
+  .last {
+    max-height: 85vh;
+  }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
+  .home-text {
+    margin-top: 6.5em;
+    font-size: 3.2em;
+  }
+  .big-text {
+    font-size: 7rem;
+  }
 
+  .good {
+    font-size: 5rem;
+    margin-left: 0.4em;
+    margin-top: -0.8em;
+  }
+  .section-title {
+    font-size: 6rem;
+  }
+  .section-bc {
+    font-size: 11rem;
+    -webkit-text-stroke-width: 1.1px;
+  }
+
+  .menu-icon {
+    top: 35px;
+    right: 20px;
+  }
+  .close-icon {
+    top: 35px;
+    right: 20px;
+  }
+  .nav-t {
+    display: none;
+  }
+  .menu-list {
+    margin-bottom: 1.5em;
+  }
+  .menu-hov .link {
+    font-size: 50px;
+  }
+  .wigs-details {
+    margin-left: -3em;
+  }
+  .text-slide h2 {
+    font-size: 60px;
+  }
+  .img-div {
+    padding: 10px 5px 50px 5px;
+  }
+  input {
+    width: 200px;
+  }
+
+  section .text {
+    bottom: -506.4%;
+  }
+  .scrollup {
+    bottom: -509.1%;
+  }
+
+  .last {
+    max-height: 77vh;
+  }
 }
+
+@media screen and (max-width: 360px) {
+  .home-text {
+    margin-top: 4.5em;
+    font-size: 3em;
+  }
+  .text-2{
+    font-size: 3.8rem;
+  }
+  .menu-list {
+    margin-bottom: .5em;
+  }
+  .menu-hov .link {
+    font-size: 45px;
+  }
+  .soc{
+    margin-left: -2.3em;
+  }
+  .sub-p{
+    width: 85%;
+  }
+  section .text {
+    bottom: -649%;
+  }
+  .scrollup {
+    bottom: -652.5%;
+  }
+  .last{
+    max-height: 97.8vh;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .home-text {
+    margin-top: 5.5em;
+    font-size: 2.5em;
+  }
+  .text-2{
+    font-size: 3rem;
+  }
+  .menu-hov .link {
+    font-size: 40px;
+  }
+  .big-text {
+    font-size: 6rem;
+  }
+
+  .good {
+    font-size: 4.4rem;
+    margin-left: 0.2em;
+    margin-top: -1.1em;
+  }
+
+  .section-title {
+    font-size: 5rem;
+  }
+  .section-bc {
+    font-size: 9rem;
+  }
+  .post-title{
+    font-size: 1.5em;
+    margin-top: -49em;
+    margin-bottom: -20em;
+  }
+  .sub-p{
+    width: 95%;
+  }
+  input{
+    width: 185px;
+  }
+  section .text {
+    bottom: -717.2%;
+  }
+  .scrollup {
+    bottom: -721.2%;
+  }
+  .last {
+    max-height: 110.2vh;
+  }
+}
+
