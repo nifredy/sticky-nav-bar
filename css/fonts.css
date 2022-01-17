@@ -1,4 +1,12 @@
 /* [0] */
+@font-face{
+  src: url(../Albra-Font-Family/Albra-Font-Family/Albra\ Regular.otf) format("otf"),
+  url(../Albra-Font-Family/Albra-Font-Family/Albra\ Text\ Regular.otf) format("otf") ;
+  font-family: "albo regular";
+  font-style: normal;
+  font-weight: normal;
+
+}
 @font-face {
   font-family: "Kiwi Maru";
   font-style: normal;

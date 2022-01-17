@@ -48,7 +48,7 @@
 
 body {
   background-color: #111717;
-  font-family: "albra regular", sans-serif;
+  /* font-family: "albra regular", sans-serif; */
   min-height: 200vh;
   overflow-x: hidden;
   transition: 0.5s ease-out;
@@ -97,14 +97,14 @@ header {
 }
 
 .nav-t {
-  margin-top: -6em;
-  margin-bottom: 3em;
+  margin-top: -7em;
+  margin-bottom: 4em;
   margin-left: 6em;
   transition: 0.6s;
 }
 .sticky .nav-t {
-  margin-top: -8em;
-  margin-bottom: 5em;
+  margin-top: -9em;
+  margin-bottom: 6em;
 }
 
 header.sticky {
@@ -268,6 +268,7 @@ ul li .vis-links {
 }
 .big-text {
   font-size: 20rem;
+  font-family: "albra regular", sans-serif;
   padding-top: 0;
   margin-top: 0.1em;
   font-style: italic;
@@ -275,6 +276,7 @@ ul li .vis-links {
 }
 .good {
   margin-left: 1em;
+  font-family: "albra regular", sans-serif;
   text-transform: uppercase;
   font-size: 17rem;
   cursor: none;
@@ -431,7 +433,7 @@ nav {
   position: absolute;
   height: 100vh;
   margin-left: 31.9em;
-  margin-top: -12.95em;
+  margin-top: -14.15em;
   visibility: hidden;
   transition: all 0.6s ease-out;
   transition-delay: 0.1s;
@@ -440,19 +442,24 @@ nav {
 }
 
 .img2 {
-  margin-top: -17.2em;
+  margin-top: -17.82em;
+  
 }
 .img3 {
   margin-top: -21.5em;
+  
 }
 .img4 {
-  margin-top: -25.7em;
+  margin-top: -25.1em;
+  
 }
 .img5 {
-  margin-top: -30em;
+  margin-top: -28.75em;
+  
 }
 .img6 {
-  margin-top: -34.2em;
+  margin-top: -32.35em;
+  
 }
 
 /* 3.45 */
@@ -619,6 +626,7 @@ nav {
 
 .text-slide h2 {
   font-size: 120px;
+  font-family: "albra regular", sans-serif;
   font-weight: 100;
   color: rgba(238, 238, 238, 0.774);
   text-transform: capitalize;
