@@ -682,6 +682,7 @@ nav {
   padding: 10px 75px;
   display: flex;
   flex-direction: column;
+  font-family: "Centra No2";
 }
 .soc {
   display: flex;
