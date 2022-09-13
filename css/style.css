@@ -1297,7 +1297,7 @@ section .text {
     padding: 5px 5px 3px 5px;
   }
   .last {
-    max-height: 39.2vh;
+    max-height: 39.5vh;
   }
   .socials h2 {
     font-size: 16px;
@@ -1419,10 +1419,10 @@ section .text {
     padding: 10px 10px 5px 10px;
   }
   section .text {
-    bottom: -667.3%;
+    bottom: -612.5%;
   }
   .scrollup {
-    bottom: -670.3%;
+    bottom: -615.5%;
   }
   .last {
     max-height: 88.5vh;
