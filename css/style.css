@@ -843,11 +843,11 @@ section .text {
   }
 
   .nav-t {
-    margin-top: -25em;
+    margin-top: -29em;
     margin-bottom: 18em;
   }
   .sticky .nav-t {
-    margin-top: -27em;
+    margin-top: -31em;
     margin-bottom: 20em;
   }
   ul li .link {
@@ -866,15 +866,19 @@ section .text {
   }
   .home-text {
     font-size: 8.7em;
-    margin-top: 2.5em;
+    margin-top: 3em;
+    margin-bottom: -3em;
   }
   .words {
     line-height: 12em;
   }
-  .wigs {
+  /* .wigs {
     margin-top: -50em;
-  }
+  } */
+
+  /* LOOK PRETTY */
   .big-text {
+    margin-top: 2.4em;
     font-size: 16rem;
   }
   .good {
@@ -884,14 +888,14 @@ section .text {
     overflow-x: hidden;
   }
 
-  .section-title {
+  /* .section-title {
     font-size: 14rem;
     padding-top: 0;
-  }
-  .section-title h1 {
+  } */
+  /* .section-title h1 {
     margin-top: 0.5em;
     margin-left: 0.2em;
-  }
+  } */
   .section-bc {
     font-size: 28rem;
     padding-top: 0;
@@ -903,25 +907,8 @@ section .text {
     margin-left: 0.1em;
     cursor: none;
   }
-  .wigs-div {
-    width: 90%;
-    margin-top: -45em;
-  }
 
-  .bg-w {
-    width: 60vw;
-    margin-right: -2em;
-  }
-  .bg-og {
-    width: 45%;
-    margin-top: -17em;
-    margin-left: 20em;
-  }
-
-  .glows-div {
-    width: 90%;
-    margin-top: -45em;
-  }
+  /* WIGSSSSSSSSSSS */
   #wigs {
     margin-top: 25em;
     margin-bottom: -60em;
@@ -929,39 +916,68 @@ section .text {
   .wigs-details {
     margin-top: -9em;
   }
+  .wigs-div {
+    width: 90%;
+    margin-top: -1em;
+  }
 
+  .bg-w {
+    width: 60vw;
+    margin-right: -2em;
+  }
+  .bg-og {
+    
+    width: 45%;
+    margin-top: -17em;
+    margin-left: 20em;
+  }
+
+  /* GLOWSSSSSSSSSS */
   #glows {
-    margin-top: -55em;
+    margin-top: -25em;
     margin-bottom: -70em;
   }
 
-  .post-div {
-    margin-top: 33.5em;
+  .glows-div {
+    width: 90%;
+    margin-top: -1em;
   }
-
+  /* POSTSSSSSSSSSS */
+  #posts{
+    height: 150vh;
+    margin-top: 22.5em;
+    margin-bottom: -70em;  
+  }
+  
+  .post-div {
+    margin-top: 59em;
+  }
+  
   .post-title {
-    margin-bottom: -15em;
-    margin-top: -22em;
+    margin-bottom: -25em;
+    margin-top: -5.5em;
   }
   .text-slide {
     margin-top: 9em;
   }
 
+  /* ABOUTTTTTTTTTT */
+
   #about {
-    margin-top: -25em;
-    margin-bottom: -55em;
+    margin-top: 40em;
+    margin-bottom: -21.5em;
   }
 
   section .text {
     right: 5rem;
-    bottom: -426.8%;
+    bottom: -388.8%;
   }
   .scrollup {
-    bottom: -428.4%;
+    bottom: -390.4%;
     right: 3.57rem;
   }
   .last {
-    max-height: 30vh;
+    max-height: 30.5vh;
   }
 
   .footer {
@@ -983,16 +999,20 @@ section .text {
   .sub-p {
     width: 65%;
   }
+  
 }
 
 @media screen and (max-width: 978px) {
   .nav-t {
-    margin-top: -14.5em;
+    margin-top: -20.5em;
     margin-bottom: 7.5em;
   }
   .sticky .nav-t {
-    margin-top: -16.5em;
+    margin-top: -22.5em;
     margin-bottom: 9.5em;
+  }
+  .logo-nav{
+    font-size: 2em;
   }
 
   .home-text {
@@ -1032,14 +1052,20 @@ section .text {
   .wigs {
     margin-top: -60em;
   }
-
+   /* LOOK PRETTY */
   .big-text {
     font-size: 12.7rem;
+    margin-top: 2.65em;
     margin-left: -0.03em;
   }
   .good {
     font-size: 9.7rem;
     margin-left: 0.95em;
+  }
+  /* WIGSSSSSSSSSSS */
+
+  #wigs {
+    margin-bottom: -70em;
   }
   .section-title {
     font-size: 12rem;
@@ -1056,6 +1082,7 @@ section .text {
     font-size: 12px;
   }
   .bg-w {
+    
     width: 50vw;
     margin-right: -1.5em;
   }
@@ -1063,14 +1090,18 @@ section .text {
     width: 43%;
     margin-left: 12.7em;
   }
-  #wigs {
-    margin-bottom: -70em;
-  }
+
+  /* GLOWSSSSSSSSSS */
+
   #glows {
-    margin-top: -55em;
+    margin-top: -25em;
     margin-bottom: -75em;
   }
+
+  /* POSTSSSSSSSSSS */
+
   #posts {
+    margin-top: 42.5em;
     max-height: -1%;
   }
 
@@ -1080,20 +1111,30 @@ section .text {
   .text-slide {
     margin-top: 5em;
   }
+  .text-slide h2 {
+    font-size: 100px;
+  }
+
+  /* ABOUTTTTTTTTTT */
+
   #about {
-    max-height: 5%;
-    margin-top: -35em;
-    margin-bottom: -75em;
+    /* max-height: 5%; */
+    margin-top: 67em;
+    margin-bottom: -25em;
+  }
+  .section-title h1 {
+    /* margin-top: 0.5em; */
+    margin-left: 0.2em;
   }
   .btn-det a {
     font-size: 20px;
     padding: 3px 15px 1px 15px;
   }
   section .text {
-    bottom: -467.72%;
+    bottom: -440.72%;
   }
   .scrollup {
-    bottom: -469.79%;
+    bottom: -442.79%;
   }
   .footer-title {
     padding: 40px 85px;
@@ -1115,15 +1156,13 @@ section .text {
     width: 198px;
   }
   .last {
-    max-height: 35vh;
+    max-height: 38.2vh;
   }
+  
 }
 
 @media screen and (max-width: 767px) {
-  .big-text {
-    font-size: 10.7rem;
-    margin-left: -0.03em;
-  }
+  
   .vis-links {
     display: none;
   }
@@ -1131,10 +1170,16 @@ section .text {
     background: url("../images/hair-phone.jpg");
     background-size: cover;
   }
+  /* LOOK PRETTY */
   .good {
     font-size: 7.7rem;
     margin-left: 0.8em;
     margin-top: -0.25em;
+  }
+  .big-text {
+    margin-top: 4em;
+    font-size: 10.7rem;
+    margin-left: -0.03em;
   }
 
   .section-title {
@@ -1151,14 +1196,17 @@ section .text {
     margin-top: 4.5em;
     font-size: 5em;
   }
+  /* WIGSSSSSSSSSSS */
+
   #wigs {
-    margin-bottom: -63em;
+    margin-top: 27em;
+    margin-bottom: -3em;
   }
   .wigs-div {
     width: 80%;
     margin: 0 auto;
     margin-left: 5em;
-    margin-top: -48em;
+    margin-top: -8em;
     flex-direction: column;
   }
   .bg-w {
@@ -1175,42 +1223,54 @@ section .text {
     font-size: 15px;
   }
 
+  /* GLOWSSSSSSSSSS */
+
   #glows {
-    margin-top: -60em;
+    margin-top: -20em;
     margin-bottom: -69.5em;
   }
   .glows-div {
     width: 80%;
     margin: 0 auto;
     margin-left: 5em;
-    margin-top: -48em;
+    margin-top: -8em;
     flex-direction: column;
   }
 
+  /* POSTSSSSSSSSSS */
+
+  #posts {
+    margin-top: 43.8em;
+  }
   .post-title {
     font-size: 2em;
-    margin-top: -30em;
+    margin-top: -12em;
+    margin-bottom: -43em;
   }
   .post-div {
-    margin-top: 420px;
+    margin-top: 82.5em;
   }
+  .text-slide h2 {
+    font-size: 80px;
+  }
+
+  /* ABOUTTTTTTTTTT */
+  
   #about {
-    margin-top: -40em;
-    margin-bottom: -59em;
+    margin-top: 50em;
+    margin-bottom: -17.8em;
   }
   .btn-det {
     margin-top: 15px;
   }
 
-  .text-slide h2 {
-    font-size: 80px;
-  }
+  
 
   section .text {
-    bottom: -464.5%;
+    bottom: -441.5%;
   }
   .scrollup {
-    bottom: -466.5%;
+    bottom: -443.5%;
   }
   .footer-title {
     padding: 60px 85px;
@@ -1237,12 +1297,14 @@ section .text {
     padding: 5px 5px 3px 5px;
   }
   .last {
-    max-height: 39vh;
+    max-height: 39.2vh;
   }
   .socials h2 {
     font-size: 16px;
   }
+  
 }
+
 
 @media screen and (max-width: 540px) {
   .big-text {
@@ -1270,13 +1332,13 @@ section .text {
   }
   .nav-t {
     font-size: 12.6px;
-    margin-top: -10em;
+    margin-top: -13em;
     margin-bottom: 8em;
     margin-left: 3em;
   }
   .sticky .nav-t {
-    margin-top: -12em;
-    margin-bottom: 10em;
+    margin-top: -15.8em;
+    margin-bottom: 10.8em;
   }
 
   ul li .link {
@@ -1293,6 +1355,27 @@ section .text {
     font-size: 16rem;
   }
 
+  /* WIGSSSSSSSSSSS */
+
+  .wigs-div{
+    margin-top: -11em;
+  }
+  .wigs-details{
+    margin-top: 3em;
+    line-height: 2em;
+  }
+
+  /* GLOWSSSSSSSSSS */
+  
+  #glows{
+    margin-top: -18em;
+  }
+
+  /* ABOUTTTTTTTTTT */
+
+  #about {
+    margin-top: 70em;
+  }
   .socials {
     margin-top: -2.5em;
   }
@@ -1345,7 +1428,7 @@ section .text {
     max-height: 88.5vh;
   }
 }
-
+/*
 @media screen and (max-width: 414px) {
   .big-text {
     font-size: 8rem;
