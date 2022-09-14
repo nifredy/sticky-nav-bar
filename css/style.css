@@ -1367,8 +1367,16 @@ section .text {
 
   /* GLOWSSSSSSSSSS */
   
+  .glows-div{
+    margin-top: -11em;
+  }
   #glows{
     margin-top: -18em;
+  }
+
+
+  .text-slide h2 {
+    font-size: 60px;
   }
 
   /* ABOUTTTTTTTTTT */
@@ -1419,19 +1427,23 @@ section .text {
     padding: 10px 10px 5px 10px;
   }
   section .text {
-    bottom: -612.5%;
+    bottom: -599.2%;
   }
   .scrollup {
-    bottom: -615.5%;
+    bottom: -602.2%;
   }
   .last {
     max-height: 88.5vh;
   }
 }
-/*
+
 @media screen and (max-width: 414px) {
-  .big-text {
+  
+  /* LOOK PRETTY */
+
+  .big-text { 
     font-size: 8rem;
+    margin-top: 5em;
   }
 
   .good {
@@ -1468,21 +1480,28 @@ section .text {
     padding-right: 1rem;
   }
   .nav-t {
-    margin-top: -10.5em;
+    margin-top: -13.5em;
     margin-bottom: 8.5em;
   }
 
   .sticky .nav-t {
-    margin-top: -13em;
-    margin-bottom: 11em;
+    margin-top: -16.5em;
+    margin-bottom: 11.5em;
   }
   .logo {
     font-size: 1.5em;
     margin-left: -3em;
   }
 
+  /* WIGSSSSSSSSSSS */
+
+  /* #wigs{
+    margin-top: 77em;
+  } */
+
   .wigs-div {
-    margin-top: -55em;
+    margin-top: -16em;
+    
   }
   .bg-w {
     width: 80vw;
@@ -1496,16 +1515,35 @@ section .text {
     font-size: 14px;
     margin-top: 1.5em;
   }
-  .glows-div {
-    margin-top: -55em;
-  }
+
+  /* GLOWSSSSSSSSSS */
+  
   #glows {
-    margin-top: -67em;
+    margin-top: -16em;
   }
-  .post-title {
-    margin-top: -34em;
+  
+  .glows-div {
+    margin-top: -16em;
   }
 
+  /* POSTSSSSSSSSSS */
+
+  .post-div{
+    margin-top: 118em;
+  }
+
+  .post-title {
+    margin-top: -15.57em;
+    margin-bottom: -61em;
+  }
+
+/* ABOUTTTTTTTTTT */
+
+ #about{
+  margin-top: 58em;
+  }
+
+  
   .footer-title {
     margin-left: 0.42em;
     margin-top: -1.7em;
@@ -1518,10 +1556,10 @@ section .text {
   }
 
   section .text {
-    bottom: -570.8%;
+    bottom: -539%;
   }
   .scrollup {
-    bottom: -573.8%;
+    bottom: -542%;
   }
   .last {
     max-height: 85vh;
@@ -1576,15 +1614,21 @@ section .text {
   .img-div {
     padding: 10px 5px 50px 5px;
   }
+  /* #glows {
+    margin-top: -26em;
+  }
+  #about{
+    margin-top: 58em;
+    } */
   input {
     width: 200px;
   }
 
   section .text {
-    bottom: -506.4%;
+    bottom: -484.4%;
   }
   .scrollup {
-    bottom: -509.1%;
+    bottom: -487.1%;
   }
 
   .last {
@@ -1612,17 +1656,21 @@ section .text {
   .sub-p{
     width: 85%;
   }
+
+  #about{
+    margin-top: 68em;
+    }
   section .text {
-    bottom: -649%;
+    bottom: -607%;
   }
   .scrollup {
-    bottom: -652.5%;
+    bottom: -610.5%;
   }
   .last{
     max-height: 97.8vh;
   }
 }
-
+/*
 @media screen and (max-width: 320px){
   .home-text {
     margin-top: 5.5em;
